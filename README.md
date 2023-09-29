@@ -12,7 +12,7 @@ From the terraform code you want to consume one of these modules, place one or m
 
 ```terraform
 module "certificate_authority" {
-  source = "github.com/ms-us-rcg-app-innovation/terraform-azure-key-vault-secrets//modules/key-vault-certificate-authority"
+  source = "github.com/ms-us-rcg-cloud-innovation/terraform-azure-key-vault-secrets//modules/key-vault-certificate-authority"
   
   name          = "ca"
   common_name   = "common_name"
@@ -29,7 +29,7 @@ module "certificate_authority" {
 ```terraform
 
 module "certificate" {
-  source = "github.com/ms-us-rcg-app-innovation/terraform-azure-key-vault-secrets//modules/key-vault-certificate"
+  source = "github.com/ms-us-rcg-cloud-innovation/terraform-azure-key-vault-secrets//modules/key-vault-certificate"
   
   name = "name"
   common_name = "common_name"
@@ -47,7 +47,7 @@ module "certificate" {
 
 ```terraform
 module "password" {
-  source = "github.com/ms-us-rcg-app-innovation/terraform-azure-key-vault-secrets//modules/key-vault-password"
+  source = "github.com/ms-us-rcg-cloud-innovation/terraform-azure-key-vault-secrets//modules/key-vault-password"
   
   name    = "name"
   length  = 16
@@ -61,7 +61,7 @@ module "password" {
 
 ```terraform
 module "value" {
-  source = "github.com/ms-us-rcg-app-innovation/terraform-azure-key-vault-secrets//modules/key-vault-value"
+  source = "github.com/ms-us-rcg-cloud-innovation/terraform-azure-key-vault-secrets//modules/key-vault-value"
   
   name = "name"
   value = "value"
